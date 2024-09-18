@@ -1,0 +1,45 @@
+.detail-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrival_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+    max-width: 100%;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    width: 68rem;
+    margin-top: 18px;
+}
+
+.arrival_details p,
+.arrival_details h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.arrival_heading {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+
+.arrival_details p {
+    font-size: 18px;
+}
+
+.arrival_button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 69px;
+    width: 97px;
+    height: 47px;
+    font-size: 22px;
+}

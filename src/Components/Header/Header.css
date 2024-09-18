@@ -1,0 +1,38 @@
+.header {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #F4F4F5;
+    align-items: center;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    grid-column: 10/13;
+    display: flex;
+    padding-right: 4rem;
+    justify-content: right;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 10px;
+
+}

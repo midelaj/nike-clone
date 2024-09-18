@@ -1,0 +1,79 @@
+.shop_card_container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    gap: 10px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+
+.first-card {
+    margin-left: 3rem;
+    /* Apply margin to only the first card */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 68px;
+    left: 71px;
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-button:hover {
+    background-color: #f0f0f0;
+}
+
+.shop-container {
+    margin-top: 11rem;
+}
+
+.shop_card_container::-webkit-scrollbar {
+    display: none;
+}
+
+.shop_card_container:hover::-webkit-scrollbar {
+    display: block;
+    height: 8px;
+}
+
+.shop_card_container:hover {
+    -ms-overflow-style: auto;
+    /* Show scrollbar on hover for IE and Edge */
+    scrollbar-width: auto;
+    /* Show scrollbar on hover for Firefox */
+}
+
+.shop_card_container:hover::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.shop_card_container:hover::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.shop_card_container:hover::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

@@ -1,3 +1,12 @@
+
+
+@font-face {
+  font-family: 'Helvetica Now Text Medium';
+  src: url('../src/assets/fonts/HelveticaNowText-Medium.woff2') format('woff2'),
+    url('../src/assets/fonts/HelveticaNowText-Medium.woff') format('woff');
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

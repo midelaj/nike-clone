@@ -1,0 +1,25 @@
+.feature_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.feature_image {
+    width: 513px;
+    height: 662px;
+}
+
+.feature_title, .feature{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.feature_button {
+    font-size: 27px;
+}
+
+.feature{
+    margin-left: 4rem;
+}

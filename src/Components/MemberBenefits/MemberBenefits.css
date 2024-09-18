@@ -1,0 +1,58 @@
+.member-card-container {
+    margin-top: 8rem;
+    overflow: auto;
+    max-width: 100%;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+}
+
+.member-card-image {
+    position: relative;
+    z-index: -1;
+    width: 450px;
+    height: 550px;
+}
+
+.member-details {
+    position: absolute;
+    bottom: 45px;
+    color: white;
+    left: 86px;
+}
+
+.member-btn {
+    color: black;
+    width: fit-content;
+    min-width: 100px;
+    bottom: 68px;
+    left: 71px;
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.member-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.member-btn {
+    margin-top: 18px;
+}
+
+.member-heading {
+    font-weight: 500;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.first-image{
+    margin-left: 4rem;
+}

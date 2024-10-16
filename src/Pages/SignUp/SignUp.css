@@ -1,0 +1,41 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 35%;
+    height: 100vh;
+    width: 500px;
+    top: 20%;
+}
+
+
+.login-container h1 {
+    margin-bottom: 2rem;
+}
+
+.login-container input {
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+
+.login-button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.login-button {
+    background-color: black;
+    border: black;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+
+.login-info {
+    color: black;
+    font-weight: 500;
+}

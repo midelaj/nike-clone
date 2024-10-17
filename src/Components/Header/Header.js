@@ -1,7 +1,8 @@
 import React from 'react'
 import jordanLogo from '../../assets/images/jordan.svg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css'
-
+import { Link } from 'react-router-dom'
 
 function NavBar() {
     return (
@@ -13,7 +14,7 @@ function NavBar() {
                     <li><a href="">Find a Store</a></li>
                     <li><a href="">Help</a></li>
                     <li><a href="">Join Us</a></li>
-                    <li><a href="">Sign In</a></li>
+                    <li><Link to='/signin'>Sign In</Link></li>
 
                 </ul>
             </div>

@@ -1,4 +1,4 @@
-const productDetails = [{
+const products = [{
     title: "Nike",
     subTitle: "Men's Polo",
     price: "$ 2 795.00"
@@ -56,4 +56,4 @@ const productDetails = [{
 
 ]
 
-export default productDetails;
+export default products;

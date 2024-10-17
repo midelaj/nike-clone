@@ -1,0 +1,30 @@
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-section {
+    list-style-type: none;
+    padding: 0;
+    grid-column-start: 2;
+}
+
+.menu-item p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.menu-item li {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 2.5;
+}
+
+.menu-section li:hover {
+    color: #000;
+}

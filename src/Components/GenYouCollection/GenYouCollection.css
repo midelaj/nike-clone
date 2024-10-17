@@ -8,7 +8,7 @@
 
 .product-image {
     width: 500px;
-    height: auto;
+    height: 500px;
     display: block;
 }
 
@@ -16,22 +16,26 @@
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
-
-}
-
-.product-subtitle{
-   color: #707072;
-}
-
-.gen-first-card{
     margin-left: 4rem;
 }
 
-.main-container{
+.product-subtitle {
+    color: #707072;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.gen-container .product-card:first-child {
+    margin-left: 4rem;
+}
+
+.main-container {
     margin-top: 8rem;
 }
 
-.gen-container{
+.gen-container {
     font-weight: bold;
 }
-

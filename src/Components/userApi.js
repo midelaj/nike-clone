@@ -36,19 +36,17 @@ export const LoginUserApi = async (email, password) => {
             body: JSON.stringify({ email, password })
         });
 
+        const result = await response.json();
         if (response.ok) {
-            const result = await response.json();
-            console.log('User logined successfully', result);
-            return true;
-
+            console.log('User logged in successfully', result);
+            return result.token; // Assuming the server returns a token
         } else {
-            console.error('Error logined user', response.status);
+            console.error('Error logging in user', response.status);
+            return null;
         }
-
     } catch (error) {
-        console.error('Error while logined', error);
+        console.error('Error while logging in', error);
+        throw error;
     }
-
-}
-
+};
 

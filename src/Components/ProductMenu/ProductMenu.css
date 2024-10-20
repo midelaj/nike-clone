@@ -1,0 +1,12 @@
+.productMenu-container{
+    display: flex;
+    gap: 1rem;
+    height: auto;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.productMenu-text{
+    margin-top: 1rem;
+}

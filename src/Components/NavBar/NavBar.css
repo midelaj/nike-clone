@@ -70,3 +70,17 @@
     transform: translateY(-50%);
     pointer-events: none;
 }
+
+
+.dropdown-container{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+

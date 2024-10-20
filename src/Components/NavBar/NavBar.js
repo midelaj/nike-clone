@@ -5,9 +5,15 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import './NavBar.css'
 import { Search } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
     const headers = ["New & Featured", "Men", "Women", "Kids", "Sale", "Customize", "SNKRS"]
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/cart');
+    }
     return (
         <div className='navbar'>
             <img className='nike ' src={nike} alt="" />
@@ -27,7 +33,7 @@ function NavBar() {
                 </div>
                 <div className="icons">
                     <span className='heart'><FaRegHeart size={24} /></span>
-                    <span className='bag'><IoBagOutline size={24} /></span>
+                    <span className='bag' onClick={handleClick}><IoBagOutline size={24} /></span>
                 </div>
 
             </div>

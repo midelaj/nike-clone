@@ -2,22 +2,17 @@ import React from 'react'
 import Header from '../../Components/Header/Header'
 import NavBar from '../../Components/NavBar/NavBar'
 import Banner from '../../Banner/Banner'
-import ProductDetail from '../../Components/ProductDetails/ProductDetail'
+import ProductMenu from '../../Components/ProductMenu/ProductMenu'
 
-
-
-function ProductPage() {
+function Products() {
   return (
-
     <div>
       <Header />
       <NavBar />
       <Banner />
-      <ProductDetail />
+      <ProductMenu />
     </div>
-
   )
 }
 
-export default ProductPage
-
+export default Products

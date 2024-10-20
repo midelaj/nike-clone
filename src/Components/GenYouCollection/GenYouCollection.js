@@ -1,28 +1,37 @@
-import React from 'react'
-import productDetails from './Product';
+import React, { useEffect, useState } from 'react'
+// import { useState } from 'react';
+// import products from './Product';
+import { fetchProducts } from '../productApi'
 import './GenYouCollection.css'
+import { useNavigate } from 'react-router-dom';
 
-
-
-function importAllImages(r) {
-    return r.keys().map(r);
-}
-
-const images = importAllImages(require.context('./assets', false, /\.(png|jpg)$/));
 
 
 function GenYouCollection() {
+
+    const [product, setProduct] = useState([]);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        fetchProducts().then(data => setProduct(data)).catch(error => console.error(error))
+            ;
+    }, []);
+
+    const handleProductClick = (productId) => {
+        navigate(`/product/${productId}`)
+    }
+
     return (
         <div className='main-container'>
             <p className='feature'>Gen Your Collection</p>
             <div className="gen-container">
-                {images.map((images, index) => (
-
-                    <div className={`gen - card - container ${index === 0 ? ' gen-first-card' : ''}`} key={index}>
-                        <img className='product-image' src={images} alt="Sport" />
-                        <p className='product-title'>{productDetails[index]?.title}</p>
-                        <p className='product-subtitle'>{productDetails[index]?.subTitle}</p>
-                        <p className='product-price'>{productDetails[index]?.price}</p>
+                {product.map(product => (
+                    <div className='product-card' onClick={()=> handleProductClick(product._id)}>
+                        <img className='product-image' src={`http://localhost:3000/assets/${product.productMainImage}`} alt="" />
+                        <div className="product-details">
+                            <p className='product-heading'>{product.productName}</p>
+                            <p className='product-price'>₹{product.productPrice}</p>
+                        </div>
                     </div>
                 ))}
             </div>

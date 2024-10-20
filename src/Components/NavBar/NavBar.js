@@ -10,7 +10,7 @@ function NavBar() {
     const headers = ["New & Featured", "Men", "Women", "Kids", "Sale", "Customize", "SNKRS"]
     return (
         <div className='navbar'>
-            <img className='nike' src={nike} alt="" />
+            <img className='nike ' src={nike} alt="" />
             <div className='drod_down'>
                 {headers.map((head) => (
                     <DropDown key={head} name={head} />
